@@ -24,7 +24,9 @@ A bit about my job: The company I worked for, M-Service, is well-known in Vietna
 As said above, I used Windows as my operating system. So hectic when it comes to operating systems. It has so many limitations (many operations does not support Windows) that every time I googled to find a solution, another one popped up almost immediately. So I decided to have another machine that operates on ubuntu. There are many ways to solve, imo:
 
 _Buy another PC (not enough money :( )
+
 _Dual boot (you may lose data if you made a mistake)
+
 _**Setting up virtual machine**: I chose this method!
 
 #### How:
