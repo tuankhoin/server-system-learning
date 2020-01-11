@@ -8,6 +8,7 @@ This note is to keep track of my progress learning the basics of server manipula
 [Introduction](#intro)
   * [Background](#bkg)
   * [Setting up virtual machine](#vm)
+  * [Basic Linux commands](#basic)
   * [Setting up ssh connection](#ssh)
   
 [Ansible](#ans)
@@ -39,7 +40,7 @@ alt="thumbnail" width="240" height="180" border="10" /></a>
 
 .iso disc file can be found on [Ubuntu's main download page](https://ubuntu.com/download). I would recommend using Ubuntu Server as a lightweight choice.
 
-### <a name="linux"></a> Basic stuff if you don't know linux yet
+### <a name="basic"></a> Basic Linux commands, if you don't know yet
 
 Example of a directory: `/etc/ansible/`
 
@@ -101,4 +102,29 @@ Typing `yes` when asked, doing some login steps and you'll be ok in most cases.
 
 For more, see [this detailed guide](https://linuxize.com/post/how-to-enable-ssh-on-ubuntu-18-04/)
 
-## <a name="ans"></a> Ansible
+## <a name="ans"></a> Ansible: common occuring problems
+
+Ansible has already have its own document guide. For basic learning, you can visit [Ansible User Guide](https://docs.ansible.com/ansible/latest/user_guide/index.html).
+
+Here, I will just note down on problems upon learning Ansible that I have approached and solved using external search outside the document. Treat this as a troubleshooting checklist for beginners to save you time.
+
+Problem type | Why? | Solution
+--- | --- | ---
+`host1 UNREACHABLE!` | By default, the system will use the username `root` while your username is not `root`. | [ansible_user](#edit) 
+Same as above | The server to connect to has password, and you have not set it to plug the password in. | [ansible_password](#edit), or add `--ask-password` flag to the command to manually type in password.
+
+Solution includes:
+
+### <a name="edit"></a>Editing inventory files:
+
+Add the specified keyword into your inventory file, after the server name/ip address (default is `/etc/ansible/hosts`), using a text editor. See [this keyword list and how to add them](https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html#connecting-to-hosts-behavioral-inventory-parameters)
+
+Example in host file:
+
+```
+#Use the host file from the username taymonkhanh when connecting to servername.com
+servername.com ansible_user=taymonkhanh 
+
+#Connect to port 69 instead of the default (22) when connecting to server floorgreen.us
+floorgreen.us ansible_port=69 
+```
