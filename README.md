@@ -9,6 +9,7 @@ This note is to keep track of my progress learning the basics of server manipula
   * [Background](#bkg)
   * [Setting up virtual machine](#vm)
   * [Setting up ssh connection](#ssh)
+  
 [Ansible](#ans)
 
 ## <a name="intro"></a> Introduction
@@ -30,8 +31,74 @@ _Dual boot (you may lose data if you made a mistake)
 _**Setting up virtual machine**: I chose this method!
 
 #### How:
-VMWare
+To set up a virtual machine, I used VMWare. See this video:
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=BHpRTVP8upg
+" target="_blank"><img src="http://img.youtube.com/vi/BHpRTVP8upg/0.jpg" 
+alt="thumbnail" width="240" height="180" border="10" /></a>
+
+.iso disc file can be found on [Ubuntu's main download page](https://ubuntu.com/download). I would recommend using Ubuntu Server as a lightweight choice.
+
+### <a name="linux"></a> Basic stuff if you don't know linux yet
+
+Example of a directory: `/etc/ansible/`
+
+`cd directory`: change working directory.
+
+`ls directory`: show what files and folder are in that directory. If no directory is specified, info will be shown on the working directory.
+
+`cp ...`: copying files. See [this instruction](https://shapeshed.com/unix-cp/).
+
+`sudo op_name command`: perform command using an installed operation.
+
+Editing a file: `sudo editor file_directory`. For `editor`, I would recommend `nano` and `vim`. By default they are installed with the OS, and `nano` is easier to use if you know nothing yet.
 
 ### <a name="ssh"></a> Setting up ssh connection
+
+#### What you need to know
+
+When connecting, a machine will have:
+* Connection type (which is ssh)
+* A username (in the form of xxx@xxx)
+* An ip address
+* A connecting port (22 by default, ranged from 0 to 2^16-1)
+
+When connected, the connecting machince will be able to perform actions on behalf of the connected.
+
+#### Windows
+
+As far as I have known, Windows can only connect to other servers, and is not able to be connected.
+
+To connect, download [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). The rest is just opening it up and fill in the ip address and the port.
+
+#### Ubuntu
+Note: any error that is related to permission and access, see if you have typed `sudo` before any command.
+
+Normally Ubuntu Server would give you the choice of installing OpenSSH from installation already. If not:
+
+```
+$ sudo apt update
+$ sudo apt install openssh-server
+```
+
+Now you are ready! 
+
+##### The connected:
+
+Once ssh is enabled, the machine will be able to be connected.
+
+There are many ways to get the ip address, such as `ip a` or `ifconfig`. The address will appear after the word `inet` in the form of xxx.xxx.xxx.xxx (`192.168.142.122` for example).
+
+For configurations such as changing port or setting keys, see [Ubuntu guide](https://help.ubuntu.com/lts/serverguide/openssh-server.html)
+
+##### The connect:
+
+```
+$ ssh ip_address_of_the_connected
+```
+
+Typing `yes` when asked, doing some login steps and you'll be ok in most cases.
+
+For more, see [this detailed guide](https://linuxize.com/post/how-to-enable-ssh-on-ubuntu-18-04/)
 
 ## <a name="ans"></a> Ansible
