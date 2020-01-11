@@ -42,17 +42,17 @@ alt="thumbnail" width="240" height="180" border="10" /></a>
 
 ### <a name="basic"></a> Basic Linux commands, if you don't know yet
 
-Example of a directory: `/etc/ansible/`
+* Example of a directory: `/etc/ansible/file-name`
 
-`cd directory`: change working directory.
+* `cd directory`: change working directory.
 
-`ls directory`: show what files and folder are in that directory. If no directory is specified, info will be shown on the working directory.
+* `ls directory`: show what files and folder are in that directory. If no directory is specified, info will be shown on the working directory.
 
-`cp ...`: copying files. See [this instruction](https://shapeshed.com/unix-cp/).
+* `cp ...`: copying files. See [this instruction](https://shapeshed.com/unix-cp/).
 
-`sudo op_name command`: perform command using an installed operation.
+* `sudo op_name command`: perform command using an installed operation.
 
-Editing a file: `sudo editor file_directory`. For `editor`, I would recommend `nano` and `vim`. By default they are installed with the OS, and `nano` is easier to use if you know nothing yet.
+* Editing a file: `sudo editor file_directory`. For `editor`, I would recommend `nano` and `vim`. By default they are installed with the OS, and `nano` is easier to use if you know nothing yet.
 
 ### <a name="ssh"></a> Setting up ssh connection
 
