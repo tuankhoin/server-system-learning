@@ -54,6 +54,8 @@ alt="thumbnail" width="240" height="180" border="10" /></a>
 
 * Editing a file: `sudo editor file_directory`. For `editor`, I would recommend `nano` and `vim`. By default they are installed with the OS, and `nano` is easier to use if you know nothing yet.
 
+* Scrolling up or down the terminal: `Shift` + `Page up`/`Page down`.
+
 ### <a name="ssh"></a> Setting up ssh connection
 
 #### What you need to know
@@ -128,3 +130,7 @@ servername.com ansible_user=taymonkhanh
 #Connect to port 69 instead of the default (22) when connecting to server floorgreen.us
 floorgreen.us ansible_port=69 
 ```
+
+### .yaml syntax error handling
+
+Install yamllint, and use this to check if your file is legal YAML. It will appear error locations for you as well.
