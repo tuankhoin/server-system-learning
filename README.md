@@ -110,7 +110,7 @@ Here, I will just note down on problems upon learning Ansible that I have approa
 
 Problem type | Why? | Solution
 --- | --- | ---
-`host1 UNREACHABLE!` | By default, the system will use the username `root` while your username is not `root`. | [ansible_user](#edit) 
+`host1 UNREACHABLE!` | By default, the system will use the username `root` while your username is not `root`. | [ansible_user](#edit) or add `--become-user <username>` flag to the command 
 Same as above | The server to connect to has password, and you have not set it to plug the password in. | [ansible_password](#edit), or add `--ask-password` flag to the command to manually type in password.
 
 Solution includes:
