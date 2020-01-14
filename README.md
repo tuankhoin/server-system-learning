@@ -106,6 +106,11 @@ For more, see [this detailed guide](https://linuxize.com/post/how-to-enable-ssh-
 
 ## <a name="ans"></a> Ansible: common occuring problems
 
+Ansible is useful for managing remmote servers, and perform actions on them, such as rebooting or deploying packages. It has 2 types of controlling:
+
+* Ad-hoc command: direct command to perform an action.
+* Playbook: perform a series of commands on chosen servers. Very useful for repeated tasks.
+
 Ansible has already have its own document guide. For basic learning, you can visit [Ansible User Guide](https://docs.ansible.com/ansible/latest/user_guide/index.html).
 
 Here, I will just note down on problems upon learning Ansible that I have approached and solved using external search outside the document. Treat this as a troubleshooting checklist for beginners to save you time.
@@ -114,6 +119,7 @@ Problem type | Why? | Solution
 --- | --- | ---
 `host1 UNREACHABLE!` | By default, the system will use the username `root` while your username is not `root`. | [ansible_user](#edit) or add `--become-user <username>` flag to the command 
 Same as above | The server to connect to has password, and you have not set it to plug the password in. | [ansible_password](#edit), or add `--ask-password` flag to the command to manually type in password.
+All .yaml related errors | They are mostly syntax errors. Your writing is probably not legal YAML and needs to check up. | [yamllint](#lint)
 
 Solution includes:
 
@@ -131,6 +137,6 @@ servername.com ansible_user=taymonkhanh
 floorgreen.us ansible_port=69 
 ```
 
-### .yaml syntax error handling
+### <a name="lint"></a>.yaml syntax error handling
 
 Install yamllint, and use this to check if your file is legal YAML. It will appear error locations for you as well.
