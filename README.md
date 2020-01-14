@@ -1,4 +1,4 @@
-# (Updating) Server manipulation basics for beginners: virtual machine, ssh connection and Ansible
+# Server manipulation basics for beginners: virtual machine, ssh connection and Ansible
 
 ## To begin...
 
@@ -94,8 +94,6 @@ $ sudo apt install openssh-server
 
 Now you are ready! 
 
-**Try this:** Connect a Linux operated (probably your main virtual machine), than a Windows operated (with PuTTY), to the 2 remote virtual machine (`logout` when you want to exit a machine).
-
 ##### The connected:
 
 Once ssh is enabled, the machine will be able to be connected.
@@ -113,6 +111,8 @@ $ ssh ip_address_of_the_connected
 Typing `yes` when asked, doing some login steps and you'll be ok in most cases.
 
 For more, see [this detailed guide](https://linuxize.com/post/how-to-enable-ssh-on-ubuntu-18-04/)
+
+**Try this:** Connect a Linux operated (probably your main virtual machine), than a Windows operated (with PuTTY), to the 2 remote virtual machine (`logout` when you want to exit a machine).
 
 ## <a name="ans"></a> Ansible: common occuring problems
 
