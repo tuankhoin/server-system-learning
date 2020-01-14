@@ -42,6 +42,7 @@ Recommended settings:
 * 15-20GB for hard disk.
 * The main server to connect to others: 4GB RAM, 2*2 processors
 * The remote servers: 2GB RAM, 1*1 processors
+
 .iso disc file can be found on [Ubuntu's main download page](https://ubuntu.com/download). I would recommend using Ubuntu Server as a lightweight choice.
 
 **Try this:** Set up 3 virtual machines: a main virtual machine as a control node, and 2 remote machines to operate on.
