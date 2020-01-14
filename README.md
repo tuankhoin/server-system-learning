@@ -1,4 +1,4 @@
-# Server manipulation basics for beginners: virtual machine, ssh connection and Ansible
+# Server manipulation basics: virtual machine, ssh connection and Ansible
 
 ## To begin...
 
