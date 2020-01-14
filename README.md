@@ -152,4 +152,5 @@ floorgreen.us ansible_port=69
 ### <a name="lint"></a>.yaml syntax error handling
 
 Install yamllint, and use this to check if your file is legal YAML. It will appear error locations for you as well.
+
 Note: Some errors may occur because of the accidential use of underscores and dashes. A `_` may be mistakenly become `-` and vice versa.
