@@ -128,6 +128,8 @@ Here, I will just note down on problems upon learning Ansible that I have approa
 
 **Try this:** Write an Ansible playbook that installs Docker Engine to the remote machines. Ad-hoc instructions can be found [here](https://docs.docker.com/install/linux/docker-ce/ubuntu/). If you don't know anything during the process, searching them on the internet is relatively easy. Trust me!
 
+**Tips**: To put commands of other packages into the playbook (such as apt or docker), Ansible docs has a documentation on how to convert them. These might be useful for you: [apt](https://docs.ansible.com/ansible/latest/modules/apt_module.html), [apt_key](https://docs.ansible.com/ansible/latest/modules/apt_key_module.html), [apt_repository](https://docs.ansible.com/ansible/latest/modules/apt_repository_module.html).
+
 Problem type | Why? | Solution
 --- | --- | ---
 `host1 UNREACHABLE!` | By default, the system will use the username `root` while your username is not `root`. | [ansible_user](#edit) or add `--become-user <username>` flag to the command 
