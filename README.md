@@ -44,6 +44,8 @@ Recommended settings:
 * The remote servers: 2GB RAM, 1*1 processors
 .iso disc file can be found on [Ubuntu's main download page](https://ubuntu.com/download). I would recommend using Ubuntu Server as a lightweight choice.
 
+**Try this:** Set up 3 virtual machines: a main virtual machine as a control node, and 2 remote machines to operate on.
+
 ### <a name="basic"></a> Basic Linux commands, if you don't know yet
 
 * Example of a directory: `/etc/ansible/file-name`
@@ -59,6 +61,8 @@ Recommended settings:
 * Editing a file: `sudo editor file_directory`. For `editor`, I would recommend `nano` and `vim`. By default they are installed with the OS, and `nano` is easier to use if you know nothing yet.
 
 * Scrolling up or down the terminal: `Shift` + `Page up`/`Page down`.
+
+**Try this:** Try them out!
 
 ### <a name="ssh"></a> Setting up ssh connection
 
@@ -90,6 +94,8 @@ $ sudo apt install openssh-server
 
 Now you are ready! 
 
+**Try this:** Connect a Linux operated (probably your main virtual machine), than a Windows operated (with PuTTY), to the 2 remote virtual machine (`logout` when you want to exit a machine).
+
 ##### The connected:
 
 Once ssh is enabled, the machine will be able to be connected.
@@ -119,6 +125,8 @@ Ansible has already have its own document guide. For basic learning, you can vis
 
 Here, I will just note down on problems upon learning Ansible that I have approached and solved using external search outside the document. Treat this as a troubleshooting checklist for beginners to save you time.
 
+**Try this:** Write an Ansible playbook that installs Docker Engine to the remote machines. Ad-hoc instructions can be found [here](https://docs.docker.com/install/linux/docker-ce/ubuntu/). If you don't know anything during the process, searching them on the internet is relatively easy. Trust me!
+
 Problem type | Why? | Solution
 --- | --- | ---
 `host1 UNREACHABLE!` | By default, the system will use the username `root` while your username is not `root`. | [ansible_user](#edit) or add `--become-user <username>` flag to the command 
@@ -144,3 +152,4 @@ floorgreen.us ansible_port=69
 ### <a name="lint"></a>.yaml syntax error handling
 
 Install yamllint, and use this to check if your file is legal YAML. It will appear error locations for you as well.
+Note: Some errors may occur because of the accidential use of underscores and dashes. A `_` may be mistakenly become `-` and vice versa.
