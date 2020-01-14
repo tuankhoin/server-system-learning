@@ -38,6 +38,10 @@ To set up a virtual machine, I used VMWare. See this video:
 " target="_blank"><img src="http://img.youtube.com/vi/BHpRTVP8upg/0.jpg" 
 alt="thumbnail" width="240" height="180" border="10" /></a>
 
+Recommended settings:
+* 15-20GB for hard disk.
+* The main server to connect to others: 4GB RAM, 2*2 processors
+* The remote servers: 2GB RAM, 1*1 processors
 .iso disc file can be found on [Ubuntu's main download page](https://ubuntu.com/download). I would recommend using Ubuntu Server as a lightweight choice.
 
 ### <a name="basic"></a> Basic Linux commands, if you don't know yet
