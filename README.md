@@ -145,7 +145,7 @@ Problem type | Why? | Solution
 `host1 UNREACHABLE!` | By default, the system will use the username `root` while your username is not `root`. | [ansible_user](#edit) or add `--become-user <username>` flag to the command 
 Same as above | The server to connect to has password, and you have not set it to plug the password in. | [ansible_password](#edit), or add `--ask-password`/`--ask-become-password` flag to the command to manually type in password.
 All .yaml related errors | They are mostly syntax errors. Your writing is probably not legal YAML and needs to check up. | [yamllint](#lint)
-`Authentication or permission failure. In some cases,...` | By default your tmp directory is probably put elsewhere | [See this](https://github.com/ansible/ansible/issues/43830#issuecomment-450808102)
+`Authentication or permission failure. In some cases,...` | By default your tmp directory is probably put elsewhere. | Modify `ansible.cfg`.[Source.](https://github.com/ansible/ansible/issues/43830#issuecomment-450808102)
 
 Solution includes:
 
