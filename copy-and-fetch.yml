@@ -1,0 +1,21 @@
+---
+- hosts: all
+  remote_user: tuankhoin
+  become: 'yes'
+  tasks:
+    - name: Create testing-area folder
+      file:
+        path: /etc/testing-area
+        state: directory
+        mode: '0755'
+
+    - name: Copy from local to remotes
+      copy:
+        src: agentmail.txt
+        dest: /etc/testing-area/samplemail.txt
+        owner: tuankhoin
+
+    - name: Fetching them back
+      fetch:
+        src: /etc/testing-area/samplemail.txt
+        dest: /etc/ansible/testing-area/
