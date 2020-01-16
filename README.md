@@ -13,6 +13,8 @@ This note is to keep track of my progress learning the basics of server manipula
   
 [Ansible](#ans)
 
+[Modify files remotely using sftp connection and FileZilla](#sftp)
+
 ## <a name="intro"></a> Introduction
 
 ### <a name="bkg"></a> Background
@@ -61,7 +63,14 @@ Recommended settings:
 
 * Editing a file: `sudo editor file_directory`. For `editor`, I would recommend `nano` and `vim`. By default they are installed with the OS, and `nano` is easier to use if you know nothing yet.
 
+* `mkdir location/directory_name/`: Creating a new directory/folder.
+
 * Scrolling up or down the terminal: `Shift` + `Page up`/`Page down`.
+
+**Tips:** During a manual installation I have accidently made a mistake: moving the whole system folder `/etc` to a non-existent location and ended up losing a day to install a new virtual machine and bring the old files in.
+
+* How to avoid: See this [thread](https://askubuntu.com/questions/841449/file-lost-using-mv).
+* How to access your disk files: the .vmdk files, your hard drive files (you can find them in your set Virtual Machine storing folder) can be opened as an archive using 7-Zip. You can extract most of the files, but you cannot modify it.
 
 **Try this:** Try them out!
 
@@ -158,3 +167,11 @@ floorgreen.us ansible_port=69
 Install yamllint, and use this to check if your file is legal YAML. It will appear error locations for you as well.
 
 Note: Some errors may occur because of the accidential use of underscores and dashes. A `_` may be mistakenly become `-` and vice versa.
+
+## <a name="sftp"></a> sftp connect using FileZilla
+
+Step 1: Install FileZilla
+
+Step 2: Provide sudo access to your logging account with `chmod -R username directory`
+
+Step 3: Now you can config, retrieve and add files to your connected server.
