@@ -173,6 +173,6 @@ Note: Some errors may occur because of the accidential use of underscores and da
 
 Step 1: Install FileZilla
 
-Step 2: Provide sudo access to your logging account with `chmod -R username directory`
+Step 2: Provide sudo access to your logging account with `chown -R username directory`
 
 Step 3: Now you can config, retrieve and add files to your connected server.
