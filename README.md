@@ -1,8 +1,8 @@
-# Server manipulation basics: virtual machine, ssh connection and Ansible
+# DevOps server automation learning: virtual machine, ssh/sftp connection, Ansible and Terraform
 
 ## To begin...
 
-This note is to keep track of my progress learning the basics of server manipulation during my summer as an IT intern for [M-Service](https://momo.vn/). To be able to write this, I want to say thank you, in general, to the whole infrastructure team, the company's committee and HR team for giving me a good first-hand experience in the fintech industry and taking good care of me, and specially to Vinh Vo, who acted as a colleague and a mentor during my internship, and hope that you will find a good girlfriend that suits your enthusiasm well in the future. I hope that you, who are reading this note (probably a new intern guy at Momo), will have fun and enjoy the ride!
+This note is to keep track of my progress learning the basics of server manipulation, and Infrastructure as Code during my summer as an IT intern for [M-Service](https://momo.vn/). To be able to write this, I want to say thank you, in general, to the whole infrastructure team, the company's committee and HR team for giving me a good first-hand experience in the fintech industry and taking good care of me, and specially to Vinh Vo, who acted as a colleague and a mentor during my internship, and hope that you will find a good girlfriend that suits your enthusiasm well in the future. I hope that you, who are reading this note (probably a new intern guy at Momo), will have fun and enjoy the ride!
 
 ## Topics
 [Introduction](#intro)
@@ -14,6 +14,8 @@ This note is to keep track of my progress learning the basics of server manipula
 [Ansible](#ans)
 
 [Modify files remotely using sftp connection and FileZilla](#sftp)
+
+[Terraform](#terr)
 
 ## <a name="intro"></a> Introduction
 
@@ -176,3 +178,7 @@ Step 1: Install FileZilla
 Step 2: Provide sudo access to your logging account with `chown -R username directory`
 
 Step 3: Now you can config, retrieve and add files to your connected server.
+
+## <a name="terr"></a>Terraform
+
+(To be updated)
