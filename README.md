@@ -1,21 +1,21 @@
-# DevOps server automation learning: virtual machine, ssh/sftp connection, Ansible and Terraform
+# DevOps server automation learning: virtual machine, ssh/sftp connection, Ansible
 
 ## To begin...
 
 This note is to keep track of my progress learning the basics of server manipulation, and Infrastructure as Code during my summer as an IT intern for [M-Service](https://momo.vn/). To be able to write this, I want to say thank you, in general, to the whole infrastructure team, the company's committee and HR team for giving me a good first-hand experience in the fintech industry and taking good care of me, and specially to Vinh Vo, who acted as a colleague and a mentor during my internship, and hope that you will find a good girlfriend that suits your enthusiasm well in the future. I hope that you, who are reading this note (probably a new intern guy at Momo), will have fun and enjoy the ride!
 
 ## Topics
-[Introduction](#intro)
+* [Introduction](#intro)
   * [Background](#bkg)
   * [Setting up virtual machine](#vm)
   * [Basic Linux commands](#basic)
   * [Setting up ssh connection](#ssh)
   
-[Ansible](#ans)
+* [Ansible](#ans)
 
-[Modify files remotely using sftp connection and FileZilla](#sftp)
+* [Modifying files remotely using sftp connection and FileZilla](#sftp)
 
-[Terraform](#terr)
+* [Terraform](#terr)
 
 ## <a name="intro"></a> Introduction
 
