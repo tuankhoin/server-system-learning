@@ -61,7 +61,7 @@ Recommended settings:
 
 * `cp ...`: copying files. See [this instruction](https://shapeshed.com/unix-cp/).
 
-* `sudo op_name command`: perform command using an installed operation.
+* `sudo op_name command`: perform command using an installed operation. `sudo` acts as a giver of superuser access to bring permission on operations.
 
 * Editing a file: `sudo editor file_directory`. For `editor`, I would recommend `nano` and `vim`. By default they are installed with the OS, and `nano` is easier to use if you know nothing yet.
 
