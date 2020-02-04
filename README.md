@@ -78,6 +78,8 @@ Recommended settings:
 
 ### <a name="ssh"></a> Setting up ssh connection
 
+SSH stands for Secure Shell. It lets you operate a server remotely and securely.
+
 #### What you need to know
 
 When connecting, a machine will have:
@@ -86,7 +88,7 @@ When connecting, a machine will have:
 * An ip address
 * A connecting port (22 by default, ranged from 0 to 2^16-1)
 
-When connected, the connecting machince will be able to perform actions on behalf of the connected.
+When connected with ssh, the connecting machince will be able to perform actions on behalf of the connected.
 
 #### Windows
 
@@ -124,7 +126,7 @@ Typing `yes` when asked, doing some login steps and you'll be ok in most cases.
 
 For more, see [this detailed guide](https://linuxize.com/post/how-to-enable-ssh-on-ubuntu-18-04/)
 
-**Try this:** Connect a Linux operated (probably your main virtual machine), than a Windows operated (with PuTTY), to the 2 remote virtual machine (`logout` when you want to exit a machine).
+**Try this:** Connect a Linux operated (probably your main virtual machine), then a Windows operated (with PuTTY), to the 2 remote virtual machines (`logout` when you want to exit a machine).
 
 ## <a name="ans"></a> Ansible: common occuring problems
 
@@ -135,7 +137,7 @@ Ansible is useful for managing remmote servers, and perform actions on them, suc
 
 Ansible has already have its own document guide. For basic learning, you can visit [Ansible User Guide](https://docs.ansible.com/ansible/latest/user_guide/index.html).
 
-Here, I will just note down on problems upon learning Ansible that I have approached and solved using external search outside the document. Treat this as a troubleshooting checklist for beginners to save you time.
+Here, I will just note down on problems upon learning Ansible that I have approached and solved using external search outside the document. Treat this as a troubleshooting checklist for beginners to save your time.
 
 **Try this:** Write an Ansible playbook that installs Docker Engine to the remote machines. Ad-hoc instructions can be found [here](https://docs.docker.com/install/linux/docker-ce/ubuntu/). If you don't know anything during the process, searching them on the internet is relatively easy. Trust me!
 
@@ -173,7 +175,9 @@ Note: Some errors may occur because of the accidential use of underscores and da
 
 ## <a name="sftp"></a> sftp connect using FileZilla
 
-Step 1: Install FileZilla
+SFTP stands for SSH File Transfer Protocol. Just like its name, SFTP connects using SSH to transer files between servers. For a simple use of it, try FileZilla to get/upload files between servers.
+
+Step 1: Install [FileZilla](https://filezilla-project.org/)
 
 Step 2: Provide sudo access to your logging account with `chown -R username directory`
 
@@ -187,4 +191,4 @@ Step 3: Now you can config, retrieve and add files to your connected server.
 ### Error handling
 
 * `Command not found`: make sure the `$PATH` is set correctly.
-* `Permission denied` and can't use `sudo`: try `sudo chmod -R 777 ~/go`. [Source](https://www.reddit.com/r/golang/comments/3ho293/permission_denied_when_using_go_install/)
+* `Permission denied` and can't use `sudo`: try `sudo chmod -R 777 ~/go`, where the `~/go` is your project directory (`go` is the default name in the instruction. You can set it to your preference). [Source](https://www.reddit.com/r/golang/comments/3ho293/permission_denied_when_using_go_install/)
