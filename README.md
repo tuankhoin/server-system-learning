@@ -15,7 +15,7 @@ This note is to keep track of my progress learning the basics of server manipula
 
 * [Modifying files remotely using sftp connection and FileZilla](#sftp)
 
-* [Terraform](#terr)
+* [Golang](#go)
 
 ## <a name="intro"></a> Introduction
 
@@ -179,6 +179,12 @@ Step 2: Provide sudo access to your logging account with `chown -R username dire
 
 Step 3: Now you can config, retrieve and add files to your connected server.
 
-## <a name="terr"></a>Terraform
+## <a name="go"></a>Golang
 
-(To be updated)
+* [Install Go](https://golang.org/doc/install)
+* [Setting up and run your first program](https://golang.org/doc/install?download=go1.13.7.linux-amd64.tar.gz)
+
+### Error handling
+
+* `Command not found`: make sure the `$PATH` is set correctly.
+* `Permission denied` and can't use `sudo`: try `sudo chmod -R 777 ~/go`. [Source](https://www.reddit.com/r/golang/comments/3ho293/permission_denied_when_using_go_install/)
