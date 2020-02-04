@@ -187,6 +187,7 @@ Step 3: Now you can config, retrieve and add files to your connected server.
 
 * [Install Go](https://golang.org/doc/install)
 * [Setting up and run your first program](https://golang.org/doc/install?download=go1.13.7.linux-amd64.tar.gz)
+* Learning Go: [Use this as your Grok Learning](https://tour.golang.org/welcome/1)
 
 ### Error handling
 
