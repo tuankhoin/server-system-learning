@@ -190,6 +190,6 @@ Step 3: Now you can config, retrieve and add files to your connected server.
 * Learning Go: [Use this as your Grok Learning](https://tour.golang.org/welcome/1)
 
 ### Error handling
-
+* Path resets after reboot: either adding the path export command to the local bashrc `~/.bashrc` (if applying on 1 user only) or `/etc/bash.bashrc` (if applying globally)
 * `Command not found`: make sure the `$PATH` is set correctly.
 * `Permission denied` and can't use `sudo`: try `sudo chmod -R 777 ~/go`, where the `~/go` is your project directory (`go` is the default name in the instruction. You can set it to your preference). [Source](https://www.reddit.com/r/golang/comments/3ho293/permission_denied_when_using_go_install/)
