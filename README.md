@@ -1,4 +1,4 @@
-# DevOps server automation learning: virtual machine, ssh/sftp connection, Ansible
+# DevOps and server automation learning
 
 ## To begin...
 
