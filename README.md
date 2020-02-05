@@ -185,7 +185,7 @@ Step 3: Now you can config, retrieve and add files to your connected server.
 
 ## <a name="go"></a>Golang
 
-Golang is a programming language written by Google for back-end servers. Would be nice to learn if you are into parallelism.
+Golang is a programming language written by Google for back-end servers. Would be nice to learn if you are into parallelism. Background knowledge of C is recommended IMHO.
 
 * [Install Go](https://golang.org/doc/install)
 * [Setting up and run your first program](https://golang.org/doc/install?download=go1.13.7.linux-amd64.tar.gz)
