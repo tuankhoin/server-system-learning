@@ -189,7 +189,7 @@ Golang is a programming language written by Google for back-end servers. Would b
 
 * [Install Go](https://golang.org/doc/install)
 * [Setting up and run your first program](https://golang.org/doc/install?download=go1.13.7.linux-amd64.tar.gz)
-* Learning Go: [Use this as your Grok Learning](https://tour.golang.org/welcome/1)
+* Learning Go: [Use this as your Grok Learning](https://tour.golang.org/list)
 
 ### Error handling
 * Path resets after reboot: You may have typed the path export to the command line instead of adding it to profile.
