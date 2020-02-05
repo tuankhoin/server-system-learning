@@ -193,7 +193,7 @@ Golang is a programming language written by Google for back-end servers. Would b
 
 ### Error handling
 * Path resets after reboot: You may have typed the path export to the command line instead of adding it to profile.
- * Method 1: Adding the command to your `/etc/profile` (for a system-wide installation) or `$HOME/.profile` as the documentation says.
- * Method 2: Either adding the path export command to the local bashrc `~/.bashrc` (if applying on 1 user only) or `/etc/bash.bashrc` (if applying globally)
+  * Method 1: Adding the command to your `/etc/profile` (for a system-wide installation) or `$HOME/.profile` as the documentation says.
+  * Method 2: Either adding the path export command to the local bashrc `~/.bashrc` (if applying on 1 user only) or `/etc/bash.bashrc` (if applying globally)
 * `Command not found`: make sure the `$PATH` is set correctly.
 * `Permission denied` and can't use `sudo`: try `sudo chmod -R 777 ~/go`, where the `~/go` is your project directory (`go` is the default name in the instruction. You can set it to your preference). [Source](https://www.reddit.com/r/golang/comments/3ho293/permission_denied_when_using_go_install/)
