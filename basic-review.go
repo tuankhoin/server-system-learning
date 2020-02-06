@@ -1,3 +1,11 @@
+/** This file can be used to demonstrate sample use of Golang basics. What is included:
+	_Basic declaration
+	_Pointers, arrays and struct
+	_Slices and its operations
+	
+	Recommended background knowledge for Go: C and OOP
+**/
+
 // What to begin
 
 package main
