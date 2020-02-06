@@ -3,7 +3,7 @@
 	
 	_Basic declaration
 	_Pointers, arrays and struct
-	_Slices and its operations
+	_Slices, maps and the operations
 	
 	Recommended background knowledge for Go: C and OOP
 	Written by Tuan Khoi Nguyen, Feb 6th 2020.
