@@ -185,11 +185,13 @@ Step 3: Now you can config, retrieve and add files to your connected server.
 
 ## <a name="go"></a>Golang
 
-Golang is a programming language written by Google for back-end servers. Would be nice to learn if you are into parallelism. Background knowledge of C is recommended IMHO.
+Golang is a programming language written by Google for back-end servers. Would be nice to learn if you are into parallelism. Background knowledge of C and OOP is recommended IMHO. 
+
+It took me 2 days full to learn all the fundamentals from scratch on [A Tour of Go](https://tour.golang.org/list) (just left with concurrency by the end of the day) and briefly compose the [basic-review.go](https://github.com/tuankhoin/server-system-learning/blob/master/basic-review.go), so I think that you will get used to it fairly fast given a fair background (I only know Matlab, C and Java by the time I'm writing this fyi).
 
 * [Install Go](https://golang.org/doc/install)
 * [Setting up and run your first program](https://golang.org/doc/install?download=go1.13.7.linux-amd64.tar.gz)
-* Learning Go: [Use this as your Grok Learning](https://tour.golang.org/list)
+* Learning Go: [Use A Tour of Go as your Grok Learning](https://tour.golang.org/list)
 
 ### Error handling
 * Path resets after reboot: You may have typed the path export to the command line instead of adding it to profile.
