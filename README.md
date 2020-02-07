@@ -192,6 +192,7 @@ It took me 2 days full to learn all the fundamentals from scratch on [A Tour of 
 * [Install Go](https://golang.org/doc/install)
 * [Setting up and run your first program](https://golang.org/doc/install?download=go1.13.7.linux-amd64.tar.gz)
 * Learning Go: [Use A Tour of Go as your Grok Learning](https://tour.golang.org/list)
+* To compile and test your code online, try [Golang Playground](https://play.golang.org/)
 
 ### Error handling
 * Path resets after reboot: You may have typed the path export to the command line instead of adding it to profile.
