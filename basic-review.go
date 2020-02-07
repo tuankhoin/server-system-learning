@@ -5,7 +5,7 @@
 	_Pointers, arrays and struct
 	_Slices, maps and the operations
 	
-	Recommended background knowledge for Go: C and OOP
+	Recommended background knowledge for Go: C
 	Written by Tuan Khoi Nguyen, Feb 6th 2020.
 **/
 
