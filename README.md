@@ -185,7 +185,7 @@ Step 3: Now you can config, retrieve and add files to your connected server.
 
 ## <a name="go"></a>Golang
 
-Golang is a programming language written by Google for back-end servers. Would be nice to learn if you are into parallelism. Background knowledge of C and OOP is recommended IMHO. 
+Golang is a programming language written by Google for back-end servers. Would be nice to learn if you are into concurrency and parallelism (the former is overlapping operations, the latter is simultaneous operations). Background knowledge of C and OOP is recommended IMHO. 
 
 It took me 2 days full to learn all the fundamentals from scratch on [A Tour of Go](https://tour.golang.org/list) (just left with concurrency by the end of the day) and briefly compose the [basic-review.go](https://github.com/tuankhoin/server-system-learning/blob/master/basic-review.go), so I think that you will get used to it fairly fast given a fair background (I only know Matlab, C and Java by the time I'm writing this fyi).
 
