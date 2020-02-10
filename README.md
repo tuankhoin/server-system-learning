@@ -61,7 +61,7 @@ Recommended settings:
 
 * `ls directory`: show what files and folder are in that directory. If no directory is specified, info will be shown on the working directory.
 
-* `cp ...`: copying files. See [this instruction](https://shapeshed.com/unix-cp/).
+* `cp ...`: copying files. See [this instruction](https://shapeshed.com/unix-cp/). See also, with caution: `mv`, `rm`.
 
 * `sudo op_name command`: perform command using an installed operation. `sudo` acts as a giver of superuser access to bring permission on operations.
 
@@ -70,6 +70,8 @@ Recommended settings:
 * `mkdir location/directory_name/`: Creating a new directory/folder.
 
 * Scrolling up or down the terminal: `Shift` + `Page up`/`Page down`.
+
+* `su`: login as root.
 
 **Tips:** During a manual installation I have accidently made a mistake: moving the whole system folder `/etc` to a non-existent location and ended up losing a day to install a new virtual machine and bring the old files in.
 
