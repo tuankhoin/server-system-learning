@@ -17,6 +17,8 @@ This note is to keep track of my progress learning the basics of server manipula
 
 * [Golang](#go)
 
+* [More?](#what)
+
 ## <a name="intro"></a> Introduction
 
 ### <a name="bkg"></a> Background
@@ -187,7 +189,7 @@ Step 3: Now you can config, retrieve and add files to your connected server.
 
 Golang is a programming language written by Google for back-end servers. Would be nice to learn if you are into concurrency and parallelism (the former is overlapping operations, the latter is simultaneous operations). Background knowledge of C and OOP is recommended IMHO. 
 
-It took me 2 days full to learn all the fundamentals from scratch on [A Tour of Go](https://tour.golang.org/list) (just left with concurrency by the end of the day) and briefly compose the [basic-review.go](https://github.com/tuankhoin/server-system-learning/blob/master/basic-review.go), so I think that you will get used to it fairly fast given a fair background (I only know Matlab, C and Java by the time I'm writing this fyi).
+It took me 3 days full to learn all the fundamentals from scratch on [A Tour of Go](https://tour.golang.org/list) (concurrency took me a whole day) and briefly compose the [basic-review.go](https://github.com/tuankhoin/server-system-learning/blob/master/basic-review.go), so I think that you will get used to it fairly fast given a fair background (I only know Matlab, C and Java by the time I'm writing this fyi).
 
 * [Install Go](https://golang.org/doc/install)
 * [Setting up and run your first program](https://golang.org/doc/install?download=go1.13.7.linux-amd64.tar.gz)
@@ -201,3 +203,12 @@ It took me 2 days full to learn all the fundamentals from scratch on [A Tour of 
   * See more: [Difference between .bashrc and .profile](https://www.pixelstech.net/article/1478399975-Differences-between-bashrc-and-profile-in-Linux)
 * `Command not found`: make sure the `$PATH` is set correctly.
 * `Permission denied` and can't use `sudo`: try `sudo chmod -R 777 ~/go`, where the `~/go` is your project directory (`go` is the default name in the instruction. You can set it to your preference). [Source](https://www.reddit.com/r/golang/comments/3ho293/permission_denied_when_using_go_install/)
+
+## <a name="what"></a>More stuff?
+
+Here I will put a list of remaining interesting tools that I could not finished, due to the limited internship time and lack of backgound knowledge. If you have the background knowledge, this would be something interesting that you will learn:
+
+* [Terraform](https://www.terraform.io/). Background knowledge: Cloud services
+* [Odoo for Developers](https://www.odoo.com/documentation/13.0/index.html). Background knowledge: Basic Python
+* [Docker](docker.io)
+* [Git using CLI](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line)
