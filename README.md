@@ -97,7 +97,7 @@ As far as I have known, Windows can only connect to other servers, and is not ab
 To connect, download [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). The rest is just opening it up and fill in the ip address and the port.
 
 #### Ubuntu
-Note: any error that is related to permission and access, see if you have typed `sudo` before any command.
+Note: any error that is related to permission and access, see if you have typed `sudo` before any command. If not, see [this thread](https://askubuntu.com/questions/230476/how-to-solve-permission-denied-when-using-sudo-with-redirection-in-bash)
 
 Normally Ubuntu Server would give you the choice of installing OpenSSH from installation already. If not:
 
