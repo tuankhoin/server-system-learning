@@ -139,7 +139,7 @@ Ansible is useful for managing remmote servers, and perform actions on them, suc
 * Ad-hoc command: direct command to perform an action.
 * Playbook: perform a series of commands on chosen servers. Very useful for repeated tasks.
 
-Ansible has already have its own document guide. For basic learning, you can visit [Ansible User Guide](https://docs.ansible.com/ansible/latest/user_guide/index.html).
+Ansible has already have its own document guide. For basic learning, you can visit [Ansible User Guide](https://docs.ansible.com/ansible/latest/user_guide/index.html). For more simplified instruction, see [this tutorial](https://serversforhackers.com/c/an-ansible-tutorial).
 
 Here, I will just note down on problems upon learning Ansible that I have approached and solved using external search outside the document. Treat this as a troubleshooting checklist for beginners to save your time.
 
