@@ -23,7 +23,7 @@ This note is to keep track of my progress learning the basics of server manipula
 
 ### <a name="bkg"></a> Background
 
-By the time I had my internship, I was a beginner to computing, only knowing some basic C and Java, and did not know how to operate on linux terminals. I used Windows as my operating system back then, and my knowledge about systems and servers are plain zero. Unlike what I expected, despite being related, this field does not require prereq coding knowledge, so I belive that as long as you enjoy it, you will get the hang of it ;) .
+By the time I had my internship, I was a beginner to computing, only knowing some basic C and Java, and did not know how to operate on linux terminals. I used Windows as my operating system back then, and my knowledge about systems and servers are plain zero. Unlike what I expected, despite being related, this field does not require prereq coding knowledge, so I belive that as long as you enjoy it, you will get the hang of it .
 
 A bit about my job: The company I worked for, M-Service, is well-known in Vietnam for its online payment application Momo. I worked here in the technology department, in the infrastructure team as a DevOps trainee.
 
@@ -31,7 +31,7 @@ A bit about my job: The company I worked for, M-Service, is well-known in Vietna
 
 As said above, I used Windows as my operating system. So hectic when it comes to operating systems. It has so many limitations (many operations does not support Windows) that every time I googled to find a solution, another one popped up almost immediately. So I decided to have another machine that operates on ubuntu. There are many ways to solve, imo:
 
-_Buy another PC (not enough money :( )
+_Buy another PC
 
 _Dual boot (you may lose data if you made a mistake)
 
