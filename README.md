@@ -10,13 +10,9 @@ This note is to keep track of my progress learning the basics of server manipula
   * [Setting up virtual machine](#vm)
   * [Basic Linux commands](#basic)
   * [Setting up ssh connection](#ssh)
-  
 * [Ansible](#ans)
-
 * [Modifying files remotely using sftp connection and FileZilla](#sftp)
-
 * [Golang](#go)
-
 * [More?](#what)
 
 ## <a name="intro"></a> Introduction
