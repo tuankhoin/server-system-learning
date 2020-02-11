@@ -2,7 +2,7 @@
 
 ## To begin...
 
-This note is to keep track of my progress learning the basics of server manipulation during my summer as an IT intern for [M-Service](https://momo.vn/). To be able to write this, I want to say thank you, in general, to the whole infrastructure team, the company's committee and HR team for giving me a good first-hand experience in the fintech industry and taking good care of me, and specially to Vinh Vo, who acted as a colleague and a mentor during my internship, and hope that you will find a good girlfriend that suits your enthusiasm well in the future. I hope that you, who are reading this note (probably a new intern guy at Momo, who I am writing this note for), will have fun and enjoy the ride!
+This note is to keep track of my one-month progress learning the basics of server manipulation during my summer as an IT intern for [M-Service](https://momo.vn/). To be able to write this, I want to say thank you, in general, to the whole infrastructure team, the company's committee and HR team for giving me a good first-hand experience in the fintech industry and taking good care of me, and specially to Vinh Vo, who acted as a colleague and a mentor during my internship, and hope that you will find a good girlfriend that suits your enthusiasm well in the future. I hope that you, who are reading this note, will have fun and enjoy the ride!
 
 ## Topics
 * [Introduction](#intro)
@@ -19,35 +19,35 @@ This note is to keep track of my progress learning the basics of server manipula
 
 ### <a name="bkg"></a> Background
 
-By the time I had my internship, I was a beginner to computing, only knowing some basic C and Java, and did not know how to operate on linux terminals. I used Windows as my operating system back then, and my knowledge about systems and servers are plain zero. Unlike what I expected, despite being related, this field does not require too much prereq coding knowledge, so I belive that as long as you enjoy it, you will get the hang of it .
+By the time I had my internship, I was a beginner to computing, only knowing some basic C and Java, and did not know how to operate on linux terminals. I only knew Windows when using operating systems back then, and my knowledge about systems and servers were plain zero. Unlike what I expected, despite being related, this field does not require too much prereq coding knowledge, so I belive that as long as you enjoy it, you will mostly get the hang of it .
 
 A bit about my job: The company I worked for, M-Service, is well-known in Vietnam for its online payment application Momo. I worked here in the technology department, in the infrastructure team as a DevOps trainee.
 
 ### <a name="vm"></a> Setting up virtual machine
 
-As said above, I used Windows as my operating system. So hectic when it comes to operating systems. It has so many limitations (many operations does not support Windows) that every time I googled to find a solution, another one popped up almost immediately. So I decided to have another machine that operates on ubuntu. There are many ways to solve, imo:
+As said above, I used Windows as my operating system. A regrettable choice. It has so many limitations (many operations does not support Windows) that every time I googled to find a solution, another problem popped up almost immediately. So I decided to have another operating system, using Ubuntu. There are many ways to do this:
 
-_Buy another PC
+_Buying another PC
 
-_Dual boot (you may lose data if you made a mistake)
+_Dual booting (you may lose data if you make a mistake)
 
-_**Setting up virtual machine**: I chose this method!
+_Setting up virtual machine: This is my choice.
 
 #### How:
-To set up a virtual machine, I used VMWare. See this video:
+To set up virtual machines, I used VMWare. See this video on how to set up one:
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=BHpRTVP8upg
 " target="_blank"><img src="http://img.youtube.com/vi/BHpRTVP8upg/0.jpg" 
-alt="thumbnail" width="240" height="180" border="10" /></a>
+alt="thumbnail" width="480" height="360" border="10" /></a>
 
-Recommended settings:
+Recommended settings for each virtual machine:
 * 15-20GB for hard disk.
-* The main server to connect to others: 4GB RAM, 2*2 processors
-* The remote servers: 2GB RAM, 1*1 processors
+* The main server to operate on, connect and control the remote ones: 4GB RAM, 2*2 processors
+* The remote servers, just to test your connection and deployments: 2GB RAM, 1*1 processors
 
-.iso disc file can be found on [Ubuntu's main download page](https://ubuntu.com/download). I would recommend using Ubuntu Server as a lightweight choice.
+.iso disc file can be found on [Ubuntu's main download page](https://ubuntu.com/download). I would recommend using Ubuntu Server (only Command Line, no UI) as a lightweight choice.
 
-**Try this:** Set up 3 virtual machines: a main virtual machine as a control node, and 2 remote machines to operate on.
+**Try this:** Set up 3 virtual machines: a main virtual machine as a control node, and 1 to 2 remote machines to operate on.
 
 ### <a name="basic"></a> Basic Linux commands, if you don't know yet
 
@@ -73,8 +73,6 @@ Recommended settings:
 
 * How to avoid: See this [thread](https://askubuntu.com/questions/841449/file-lost-using-mv).
 * How to access your disk files: the .vmdk files, your hard drive files (you can find them in your set Virtual Machine storing folder) can be opened as an archive using 7-Zip. You can extract most of the files, but you cannot modify it.
-
-**Try this:** Try them out!
 
 ### <a name="ssh"></a> Setting up ssh connection
 
@@ -135,7 +133,7 @@ Ansible is useful for managing remmote servers, and perform actions on them, suc
 * Ad-hoc command: direct command to perform an action.
 * Playbook: perform a series of commands on chosen servers. Very useful for repeated tasks.
 
-Ansible has already have its own document guide. For basic learning, you can visit [Ansible User Guide](https://docs.ansible.com/ansible/latest/user_guide/index.html). For more simplified instruction, see [this tutorial](https://serversforhackers.com/c/an-ansible-tutorial).
+Ansible has already have its own document guide. For basic learning, you can visit [Ansible User Guide](https://docs.ansible.com/ansible/latest/user_guide/index.html). For a more simplified instruction, see [this tutorial](https://serversforhackers.com/c/an-ansible-tutorial).
 
 Here, I will just note down on problems upon learning Ansible that I have approached and solved using external search outside the document. Treat this as a troubleshooting checklist for beginners to save your time.
 
@@ -157,19 +155,21 @@ Solution includes:
 
 Add the specified keyword into your inventory file, after the server name/ip address (default is `/etc/ansible/hosts`), using a text editor. See [this keyword list and how to add them](https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html#connecting-to-hosts-behavioral-inventory-parameters)
 
-Example in host file:
+Example in host (`.ini` format) file:
 
 ```
-#Use the host file from the username taymonkhanh when connecting to servername.com
+#When connecting to servername.com:
+
+#Use the host file from the username taymonkhanh
 servername.com ansible_user=taymonkhanh 
 
-#Connect to port 69 instead of the default (22) when connecting to server floorgreen.us
-floorgreen.us ansible_port=69 
+#Connect to port 69 instead of the default (22)
+servername.com ansible_port=69 
 ```
 
 ### <a name="lint"></a>.yaml syntax error handling
 
-Install yamllint, and use this to check if your file is legal YAML. It will appear error locations for you as well.
+Install yamllint, and use this to check if your file is legal `.yaml`. It will appear error locations for you as well.
 
 Note: Some errors may occur because of the accidential use of underscores and dashes. A `_` may be mistakenly become `-` and vice versa.
 
@@ -185,7 +185,7 @@ Step 3: Now you can config, retrieve and add files to your connected server.
 
 ## <a name="go"></a>Golang
 
-Golang is a programming language written by Google for back-end servers. Would be nice to learn if you are into concurrency and parallelism (the former is overlapping operations, the latter is simultaneous operations). Background knowledge of C and OOP is recommended IMHO. 
+Golang is a programming language written by Google for back-end servers. Would be nice to learn if you are into concurrency. Background knowledge of C is recommended IMHO. 
 
 It took me 3 days full to learn all the fundamentals from scratch on [A Tour of Go](https://tour.golang.org/list) (concurrency took me a whole day) and briefly compose the [basic-review.go](https://github.com/tuankhoin/server-system-learning/blob/master/basic-review.go), so I think that you will get used to it fairly fast given a fair background (I only know Matlab, C and Java by the time I'm writing this fyi).
 
@@ -199,8 +199,8 @@ It took me 3 days full to learn all the fundamentals from scratch on [A Tour of 
   * Method 1: Adding the command to your `/etc/profile` (for a system-wide installation) or `$HOME/.profile` as the documentation says.
   * Method 2: Either adding the path export command to the local bashrc `~/.bashrc` (if applying on 1 user only) or `/etc/bash.bashrc` (if applying globally)
   * See more: [Difference between .bashrc and .profile](https://www.pixelstech.net/article/1478399975-Differences-between-bashrc-and-profile-in-Linux)
-* `Command not found`: make sure the `$PATH` is set correctly.
-* `Permission denied` and can't use `sudo`: try `sudo chmod -R 777 ~/go`, where the `~/go` is your project directory (`go` is the default name in the instruction. You can set it to your preference). [Source](https://www.reddit.com/r/golang/comments/3ho293/permission_denied_when_using_go_install/)
+* `Command not found`: make sure the `$PATH` is set correctly. Read above again.
+* `Permission denied` and cannot use `sudo`: try `sudo chmod -R 777 ~/go`, where the `~/go` is your project directory (`go` is the default name in the instruction. You can set it to your preference). [Source](https://www.reddit.com/r/golang/comments/3ho293/permission_denied_when_using_go_install/)
 
 ## <a name="what"></a>More stuff?
 
