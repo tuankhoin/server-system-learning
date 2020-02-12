@@ -1,4 +1,4 @@
-# Internship note: Server automation learning
+# Internship note: Server learning
 
 ## To begin...
 
