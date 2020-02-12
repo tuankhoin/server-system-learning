@@ -208,7 +208,20 @@ It took me 3 days full to learn all the fundamentals from scratch on [A Tour of 
 
 Here I will put a list of remaining interesting tools that I could not finished, due to either the limited internship time or lack of backgound knowledge. If you have the them, this would be something interesting that you will learn:
 
-* [Terraform](https://www.terraform.io/). Background knowledge: Cloud services
-* [Odoo for Developers](https://www.odoo.com/documentation/13.0/index.html). Background knowledge: Basic Python
-* [Docker](docker.io)
-* [Git using CLI](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line)
+### [Terraform](https://www.terraform.io/). 
+Background knowledge: Cloud services
+
+Terraform works like Ansible, deploying tasks to the remote servers (Infrastructure ad Code). The difference is that Terraform is declarative. It runs on cloud servers only, so you will need to have knowledge on at least one cloud provider.
+
+### [Odoo for Developers](https://www.odoo.com/documentation/13.0/index.html). 
+Background knowledge: Basic Python
+
+Odoo has various purposes. A front-end feature that you can try on Odoo for Developers is to design a UI. Python will be used for development.
+
+### [Docker](docker.io)
+
+You already know virtual machines right from the first part. But it might be very resource consuming to run simultaneous applications on them. Container is a more lightweight, movable solution, and Docker is to build, test and deploy them. [How is it more lightweight?](https://www.quora.com/What-is-the-purpose-of-Docker/answer/Anjali-Nair-324)
+
+### [Git using CLI](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line)
+
+To be more fluent with CLI, you can try modifying repositories via git, but using only CLI.
