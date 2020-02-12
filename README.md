@@ -208,12 +208,12 @@ It took me 3 days full to learn all the fundamentals from scratch on [A Tour of 
 
 Here I will put a list of remaining interesting tools that I could not finished, due to either the limited internship time or lack of backgound knowledge. If you have the them, this would be something interesting that you will learn:
 
-### [Terraform](https://www.terraform.io/). 
+### [Terraform](https://www.terraform.io/)
 Background knowledge: Cloud services
 
 Terraform works like Ansible, deploying tasks to the remote servers (Infrastructure ad Code). The difference is that Terraform is declarative. It runs on cloud servers only, so you will need to have knowledge on at least one cloud provider.
 
-### [Odoo for Developers](https://www.odoo.com/documentation/13.0/index.html). 
+### [Odoo for Developers](https://www.odoo.com/documentation/13.0/index.html)
 Background knowledge: Basic Python
 
 Odoo has various purposes. A front-end feature that you can try on Odoo for Developers is to design a UI. Python will be used for development.
