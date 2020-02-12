@@ -206,7 +206,7 @@ It took me 3 days full to learn all the fundamentals from scratch on [A Tour of 
 
 ## <a name="what"></a>More stuff?
 
-Here I will put a list of remaining interesting tools that I could not finished, due to either the limited internship time or lack of backgound knowledge. If you have the them, this would be something interesting that you will learn:
+Here I will put a list of remaining interesting tools that I could not finished, due to either the limited internship time or lack of backgound knowledge. All of these will be very interesting with many applications once you are proficient:
 
 ### [Terraform](https://www.terraform.io/)
 Background knowledge: Cloud services
