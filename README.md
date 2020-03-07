@@ -33,6 +33,8 @@ _Buying another PC
 
 _Dual booting (you may lose data if you make a mistake)
 
+_Use tools like Cygwin or MinGW.
+
 _Setting up virtual machine: This is my choice.
 
 #### How:
